@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+
+  .circle-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: linear-gradient( #ff0e0e 0%, #7b29ff 100%);
+    overflow: hidden;
+
+  }
+
+  @keyframes moveCircle {
+    0% {
+      transform: translate(0%, -50%) translateY(0);
+    }
+    50%{
+      transform: translate(0%, 0%) translateY(0); 
+    }
+    100% {
+      transform: translate(0%,-50%) translateY(0);
+    }
+  }
+
+  .pattern {
+    width: 1273.5px;
+    height: 1392.1px;
+    background: url(./img/Group\ 68.png)no-repeat -323px -80px; 
+    background-size: contain;
+    animation: moveCircle 10s infinite linear;
+  }
+
+</style>
+<body>
+  <div class="circle-container">
+    <div class="pattern"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+@import url(./reset.css);
+
+@font-face {
+  font-family: 'sub1_text';
+  src: url(../font/AppleSDGothicNeoSB.ttf);
+}
+@font-face {
+  font-family: 'sub2_text';
+  src: url(../font/AppleSDGothicNeoL.otf);
+}
+body{font-size: 14px; font-family: 'sub2_text'; background: #1e1e1e; color: #cccc;}
+a{text-decoration: none; color: #ccc; overflow: hidden;}
+@media screen and (min-width:1025px){
+  /* lay_out */
+  #header{z-index: 900; display: block; position: fixed; top: 0; left: 0; width: 100%; box-sizing: border-box; border: solid 1px red;}
+
+
+  /* //lay_out */
+  
+  h1.logo{ position: absolute; top: 50%; left: 50%; transform: translateX(-50%); font-size: 205px; transition: fill .5s ease; color: #fff;}
+
+}
+
+/* git remote add origin https://github.com/Kheara/portfolio.git/
